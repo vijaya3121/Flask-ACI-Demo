@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Avast/137.0.0.0" version="28.2.9">
+  <diagram name="Page-1" id="1kKm6fNk69e247tlLY99">
+    <mxGraphModel dx="1042" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="uAswrH0S59kuFmXcibpD-1" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Developer_Tools.svg;" vertex="1" parent="1">
+          <mxGeometry x="400" y="270" width="47" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uAswrH0S59kuFmXcibpD-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="142.25" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-5" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.visual_studio_online;" vertex="1" parent="1">
+          <mxGeometry x="60" y="123.5" width="50" height="46.5" as="geometry" />
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uAswrH0S59kuFmXcibpD-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="344.2649999999999" y="141.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-7" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Docker.svg;" vertex="1" parent="1">
+          <mxGeometry x="200" y="113" width="69.51" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uAswrH0S59kuFmXcibpD-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="521.8" y="141.505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-8" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;fillColor=#FF6A00;strokeColor=none;shape=mxgraph.alibaba_cloud.acr_cloud_container_registry;" vertex="1" parent="1">
+          <mxGeometry x="377.4" y="101.12" width="69.6" height="80.77" as="geometry" />
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="uAswrH0S59kuFmXcibpD-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="701" y="141.31500000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-9" value="" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/compute/Container_Instances.svg;" vertex="1" parent="1">
+          <mxGeometry x="550" y="102" width="74" height="78.63" as="geometry" />
+        </mxCell>
+        <mxCell id="uAswrH0S59kuFmXcibpD-10" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.browser;" vertex="1" parent="1">
+          <mxGeometry x="720" y="105.26" width="57.5" height="87.76" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
