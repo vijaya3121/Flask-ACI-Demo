@@ -1,8 +1,7 @@
 ## 🐳 Flask Web App on Azure Container Instances (ACI)
-![Azure](https://img.shields.io/badge/Deployed%20on-Azure-blue)
-![Docker](https://img.shields.io/badge/Containerized%20with-Docker-blue)
-![Flask](https://img.shields.io/badge/Framework-Flask-green)
-![Status](https://img.shields.io/badge/Status-Deployed-success)
+![Azure](https://img.shields.io/badge/Deployed%20on-Azure-blue)   ![Docker](https://img.shields.io/badge/Containerized%20with-Docker-blue)   ![Flask](https://img.shields.io/badge/Framework-Flask-green)   ![Status](https://img.shields.io/badge/Status-Deployed-success)
+
+---
 
 ## 📘 Project Overview
 
@@ -14,6 +13,8 @@ It’s part of my DevOps learning journey, focusing on cloud deployment, CI/CD, 
 ## 🧱 Architecture
 
 Flask App → Docker Image → Azure Container Registry → Azure Container Instance (Public IP)
+
+📊 **Architecture Diagram**
 ![](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/flask-aci-image.png)
 
 ---
@@ -67,7 +68,7 @@ Successfully built and tagged the Flask Docker image.
 ![Docker Build Success](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/docker%20build%20success.png)
 
 ---
-### 🧱 step 4️⃣ Build and test locally
+### 🧱 step 4️⃣ Build and Test Locally
 ```
 docker build -t flask-demo:v1 .
 docker run -p 5000:5000 flask-demo:v1
@@ -83,7 +84,7 @@ az acr login --name myacrflask2040
 ```
 ![acr list](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/acr%20list.png)
 ---
-### ☁️ Step 6: Push to Azure Container Registry 
+### ☁️ Step 6 Push to Azure Container Registry 
 ```
 docker tag flask-demo:v1 myacrflask2040.azurecr.io/flask-demo:v1
 docker push myacrflask2040.azurecr.io/flask-demo:v1
@@ -108,7 +109,7 @@ az container create \
 ```
 ---
 
-### 8️⃣ View app URL
+### 8️⃣ View App URL
 ```
 az container show \
   --resource-group myResourceGroupFlask \
