@@ -68,6 +68,7 @@ Successfully built and tagged the Flask Docker image.
 docker build -t flask-demo:v1 .
 docker run -p 5000:5000 flask-demo:v1
 ```
+![docker run](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/docker%20run%20output.png)
 ---
 
 ### 5️⃣ Create Azure Resources
@@ -76,12 +77,14 @@ az group create --name myResourceGroupFlask --location centralindia
 az acr create --resource-group myResourceGroupFlask --name myacrflask2040 --sku Basic
 az acr login --name myacrflask2040
 ```
+![acr list](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/acr%20list.png)
 ---
 ### 6️⃣ Tag and push image to ACR
 ```
 docker tag flask-demo:v1 myacrflask2040.azurecr.io/flask-demo:v1
 docker push myacrflask2040.azurecr.io/flask-demo:v1
 ```
+![push to acr](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/push%20to%20acr.png)
 ---
 ### 7️⃣ Deploy to Azure Container Instance
 ```
@@ -109,6 +112,7 @@ az container show \
   --query "{IP:ipAddress.ip, FQDN:ipAddress.fqdn}" \
   --out table
 ```
+![container instance running](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/container%20instance%20running%20state.png)
 ---
 ## Then visit:
 ```
