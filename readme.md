@@ -14,6 +14,7 @@ It’s part of my DevOps learning journey, focusing on cloud deployment, CI/CD, 
 ## 🧱 Architecture
 
 Flask App → Docker Image → Azure Container Registry → Azure Container Instance (Public IP)
+![](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/flask-aci-image.png)
 
 ---
 
