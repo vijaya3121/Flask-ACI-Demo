@@ -58,6 +58,10 @@ COPY . /app
 RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
 ```
+Successfully built and tagged the Flask Docker image.
+
+![Docker Build Success](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/docker%20build%20success.png)
+
 ---
 ### 4️⃣ Build and test locally
 ```
