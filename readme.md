@@ -1,4 +1,8 @@
 ## 🐳 Flask Web App on Azure Container Instances (ACI)
+![Azure](https://img.shields.io/badge/Deployed%20on-Azure-blue)
+![Docker](https://img.shields.io/badge/Containerized%20with-Docker-blue)
+![Flask](https://img.shields.io/badge/Framework-Flask-green)
+![Status](https://img.shields.io/badge/Status-Deployed-success)
 
 ## 📘 Project Overview
 
@@ -28,7 +32,7 @@ Azure Container Instance (ACI) – Serverless container runtime
 ---
 
 ## ⚙️ Step-by-Step Setup
-### 1️⃣ Create a Flask App
+### 🐍 Step 1: Create Flask App
 ```
 mkdir flask-web && cd flask-web
 nano app.py
@@ -44,13 +48,12 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 ```
 ---
-
-### 2️⃣ Create requirements file
+### 📦 Step 2: Create requirements.txt  
 ```
 echo "flask" > requirements.txt
 ```
 ---
-### 3️⃣ Create Dockerfile
+### 🐳 Step 3: Build Docker Image
 ```
 FROM python:3.9-slim
 WORKDIR /app
@@ -63,7 +66,7 @@ Successfully built and tagged the Flask Docker image.
 ![Docker Build Success](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/docker%20build%20success.png)
 
 ---
-### 4️⃣ Build and test locally
+### 🧱 step 4️⃣ Build and test locally
 ```
 docker build -t flask-demo:v1 .
 docker run -p 5000:5000 flask-demo:v1
@@ -71,7 +74,7 @@ docker run -p 5000:5000 flask-demo:v1
 ![docker run](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/docker%20run%20output.png)
 ---
 
-### 5️⃣ Create Azure Resources
+### step5️⃣ Create Azure Resources
 ```
 az group create --name myResourceGroupFlask --location centralindia
 az acr create --resource-group myResourceGroupFlask --name myacrflask2040 --sku Basic
@@ -79,14 +82,14 @@ az acr login --name myacrflask2040
 ```
 ![acr list](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/acr%20list.png)
 ---
-### 6️⃣ Tag and push image to ACR
+### ☁️ Step 6: Push to Azure Container Registry 
 ```
 docker tag flask-demo:v1 myacrflask2040.azurecr.io/flask-demo:v1
 docker push myacrflask2040.azurecr.io/flask-demo:v1
 ```
 ![push to acr](https://github.com/vijaya3121/Flask-ACI-Demo/blob/main/push%20to%20acr.png)
 ---
-### 7️⃣ Deploy to Azure Container Instance
+### step7️⃣ Deploy to Azure Container Instance
 ```
 az container create \
   --resource-group myResourceGroupFlask \
